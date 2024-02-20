@@ -1,24 +1,25 @@
-import { StyleSheet, View, Text} from 'react-native'
+import { StyleSheet, View} from 'react-native'
+import { Header } from '../components/Header'
+import { Botao} from '../components/Botao'
 
 export function Inicial(){
     return(
-        <View style={styles.conteiner}>
-            <Text style={styles.texto}>Senai Roberto Mange</Text>
-            <Text style={styles.texto}>2DS</Text>
+        <View style={styles.container}>
+            <Header
+                titulo='Senai Roberto Mange'
+                subtitulo='2DS'
+            />
+            <Botao text='Usuário'/>
+            <Botao text='Sensores'/>
+            <Botao text='Sobre'/>
         </View>
 
     )
 }
 
 const styles = StyleSheet.create({
-    conteiner: {
+    container: {
         flex: 1,
-        backgroundColor: "#080A0C"
-
+        backgroundColor: "#fff"
     },
-    texto: {
-        color: '#fff',
-        fontSize: 24
-    }
-    
 })
