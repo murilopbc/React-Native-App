@@ -1,10 +1,22 @@
 import { StyleSheet, TouchableOpacity, Text } from "react-native"
+import {useState} from "react"
 
 
 export const Botao = ({text}) => {
+
+    const [cliques, setCliques] = useState(0)
+
+    const contarCliques = () =>{
+        setCliques(cliques + 1)
+    }
+
+
     return (
-        <TouchableOpacity style={styles.container}>
-            <Text style={styles.text}>{text}</Text>
+        <TouchableOpacity
+            style={styles.container}
+            onPress={contarCliques}
+        >
+            <Text style={styles.text}>{text} ({cliques})</Text>
         </TouchableOpacity>
     )
 }
