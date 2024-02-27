@@ -12,7 +12,7 @@ export const Header = ({titulo, subtitulo}) => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#9da0a1',
+        backgroundColor: 'purple',
         alignItems: 'center',
         paddingVertical: 12
     },

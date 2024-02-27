@@ -11,7 +11,8 @@ export function Lista(){
 
 const styles = StyleSheet.create({
     texto: {
-        backgroundColor: '#fff'
+        backgroundColor: '#fff',
+        paddingTop: 24
     },
 
 })
