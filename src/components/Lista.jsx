@@ -1,4 +1,5 @@
-import { View, StyleSheet, Text, FlatList} from "react-native"
+import { View, StyleSheet, FlatList} from "react-native"
+import { Usuario } from "./Usuario"
 
 export function Lista(){
 
@@ -31,12 +32,11 @@ export function Lista(){
                 data={listaUsuarios}
                 keyExtractor={(item) => {item.codigo}}
                 renderItem={({item}) => (
-                    <>
-                        <Text style={styles.item}>{item.nome}</Text>
-                        <Text style={styles.item}>{item.email}</Text>
-                        <Text style={styles.item}>{item.telefone}</Text>
-                    </>
-                    
+                    <Usuario
+                        nome={item.nome}
+                        email={item.email}
+                        telefone={item.telefone}
+                    />  
                 )}
             />
                 
@@ -49,9 +49,5 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         paddingTop: 24
     },
-    item: {
-        color: '#fff'
-    }
 
 })
-

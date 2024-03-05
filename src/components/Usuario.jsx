@@ -1,17 +1,17 @@
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native"
 
-export function Usuario(){
+export function Usuario(nome, email, telefone){
     return(
         <View style={styles.container}>
 
             <View style={styles.containerDados}>
-                <Text style={styles.texto}>{}</Text>
-                <Text style={styles.texto}>{}</Text>
-                <Text style={styles.texto}>{}</Text>
+                <Text style={styles.texto}>{nome}</Text>
+                <Text style={styles.texto}>{email}</Text>
+                <Text style={styles.texto}>{telefone}</Text>
             </View>
 
             <TouchableOpacity style={styles.botao}>
-                <Text style={styles.texto}>-</Text>
+                <Text style={styles.textoBotao}>-</Text>
             </TouchableOpacity>
 
         </View>
@@ -21,13 +21,12 @@ export function Usuario(){
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        backgroundColor: '#fff'
+        margin: 5
     },
     containerDados: {
         flex: 1,
-        backgroundColor: '#590d22',
-       
-
+        backgroundColor: '#fff',
+        borderRadius: 5,
     },
     botao: {
         width: 60,
@@ -37,11 +36,12 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         backgroundColor: '#590d22',
         marginStart: 10
-
     },
     texto: {
-        color: '#fff'
-
+        color: '#000'
+    },
+    textoBotao: {
+        color: "#fff",
+        fontSize: 26
     }
-
 })
