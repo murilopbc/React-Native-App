@@ -36,7 +36,7 @@ export function Usuarios(){
         <Formulario adicionar={adicionarUsuario}/>
         <Lista
          colecao={listaUsuarios}
-         remover={listaUsuarios}
+         remover={removerUsuario}
          />
 
       </View>
