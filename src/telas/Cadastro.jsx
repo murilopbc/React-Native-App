@@ -8,7 +8,7 @@ export function Cadastro(){
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-  const handleCadastro = () => {
+  const formularioCadastro = () => {
     
    
     console.log('User:', user);
@@ -41,7 +41,7 @@ export function Cadastro(){
       />
       <Button
         title="Cadastrar"
-        onPress={handleCadastro}
+        onPress={formularioCadastro}
       />
     </View>
   );

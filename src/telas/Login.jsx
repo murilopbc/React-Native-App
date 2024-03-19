@@ -7,7 +7,7 @@ export function Login(){
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
+  const formularioLogin = () => {
     
     console.log('Username:', username);
     console.log('Password:', password);
@@ -33,7 +33,7 @@ export function Login(){
       />
       <Button
         title="Entrar"
-        onPress={handleLogin}
+        onPress={formularioLogin}
       />
     </View>
   );
