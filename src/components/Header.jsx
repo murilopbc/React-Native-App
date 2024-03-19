@@ -11,12 +11,11 @@ export const Header = ({ titulo, subtitulo }) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "purple",
     alignItems: "center",
-    paddingVertical: 12,
+    paddingVertical: 10,
   },
   text: {
-    color: "#fff",
+    color: "black",
     fontSize: 24,
     fontWeight: "500",
   },
