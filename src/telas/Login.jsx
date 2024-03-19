@@ -8,10 +8,10 @@ export function Login(){
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
-    // Aqui você pode adicionar a lógica para autenticar o usuário
+    
     console.log('Username:', username);
     console.log('Password:', password);
-    // Por exemplo, você pode enviar uma solicitação para um servidor para autenticar o usuário
+   
   };
 
   return (
@@ -44,8 +44,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#d3d3',
+    backgroundColor: '#d3d3d3',
   },
+
   input: {
     width: '80%',
     marginBottom: 10,
@@ -56,5 +57,3 @@ const styles = StyleSheet.create({
     borderRadius: 4,
   },
 });
-
-

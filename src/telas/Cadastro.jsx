@@ -10,11 +10,11 @@ export function Cadastro(){
 
   const handleCadastro = () => {
     
-    // Aqui você pode adicionar a lógica para autenticar o usuário
+   
     console.log('User:', user);
     console.log('Username:', username);
     console.log('Password:', password);
-    // Por exemplo, você pode enviar uma solicitação para um servidor para autenticar o usuário
+    
   };
 
   return (
